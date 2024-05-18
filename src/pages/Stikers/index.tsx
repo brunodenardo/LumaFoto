@@ -1,9 +1,11 @@
+import BotaoAcessoCamera from "@/src/components/BotaoAcessoCamera"
 import { View, Text, StyleSheet } from "react-native"
 
-export default function Stikers(){
+export default function Stikers({navigation}:any){
   return(
     <View style={style.background}>
       <Text style={style.text}>Stikers</Text>
+      <BotaoAcessoCamera navigation={navigation}/>
     </View>
   )
 }

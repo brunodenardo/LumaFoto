@@ -1,13 +1,11 @@
+import BotaoAcessoCamera from "@/src/components/BotaoAcessoCamera"
 import { View, Text, StyleSheet, Button } from "react-native"
 
 export default function Fontes({navigation}:any){
   return(
     <View style={style.background}>
       <Text style={style.text}>Fontes</Text>
-      <Button
-        title="Camera"
-        onPress={() => navigation.navigate('Camera')}
-      />
+      <BotaoAcessoCamera navigation={navigation}/>
     </View>
   )
 }
